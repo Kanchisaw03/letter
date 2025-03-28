@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the Hidden Hearts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Music -->
+    <audio id="bg-music" autoplay loop>
+        <source src="lofi.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Welcome Screen -->
+    <div id="welcome" class="welcome-screen">
+        <h1 class="title">Hey Love! Find all the hearts for a sweet surprise!</h1>
+        <button onclick="startGame()">Start Game</button>
+    </div>
+
+    <div id="game" class="game-screen" style="display: none;">
+        <div class="cloud cloud1"></div>
+        <div class="cloud cloud2"></div>
+        <div class="cloud cloud3"></div>
+      
+        <div id="hearts-container"></div>
+        <div id="hint-message" class="hint-message">Find all the hearts!</div>
+      </div>
+      
+        <!-- Final message box with glassmorphism effect -->
+        <div class="final-screen" id="final">
+            <h2> Congratulations! </h2>
+            <p>You’ve found all my hidden love notes.</p>
+            <p>They were always meant for you. 💌</p>
+          </div>
+          
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
